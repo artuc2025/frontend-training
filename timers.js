@@ -34,3 +34,9 @@ window.addEventListener("resize", debouncedFunction);
 
 const throttledFunction = throttle(() => console.log("Throttled!"), 1000);
 window.addEventListener("resize", throttledFunction);
+
+// Debounce: ждёт, пока пользователь прекратит действие, прежде чем вызвать функцию.
+// Используется для input-полей, resize, search-подсказок.
+
+// Throttle: ограничивает вызов функции не чаще, чем 1 раз в N мс.
+// Используется для scroll, resize и т.д. чтобы не перегружать.
